@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(_ sender: UIButton) {
-        print("Now finished is a Git tutorial")
+        print("Button chenged")
     }
 }
 
