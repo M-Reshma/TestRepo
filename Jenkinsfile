@@ -1,0 +1,4 @@
+
+node {
+sh ‘echo HelloWorld’
+}

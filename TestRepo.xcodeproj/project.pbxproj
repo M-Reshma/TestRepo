@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10567FA12461D56C0078E2F7 /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 10567FA02461D56C0078E2F7 /* Jenkinsfile */; };
 		1088A4AE244863F0004AEC3F /* NewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1088A4AD244863F0004AEC3F /* NewSample.swift */; };
 		1088A4B024486482004AEC3F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1088A4AF24486482004AEC3F /* HomeViewController.swift */; };
 		10E2A3232447655C00ECC5C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E2A3222447655C00ECC5C6 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10567FA02461D56C0078E2F7 /* Jenkinsfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
 		1088A4AD244863F0004AEC3F /* NewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSample.swift; sourceTree = "<group>"; };
 		1088A4AF24486482004AEC3F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		10E2A31F2447655C00ECC5C6 /* TestRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 		10E2A3162447655C00ECC5C6 = {
 			isa = PBXGroup;
 			children = (
+				10567FA02461D56C0078E2F7 /* Jenkinsfile */,
 				10E2A3212447655C00ECC5C6 /* TestRepo */,
 				10E2A3362447657C00ECC5C6 /* TestRepoTests */,
 				10E2A3412447657C00ECC5C6 /* TestRepoUITests */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10E2A32D2447657A00ECC5C6 /* LaunchScreen.storyboard in Resources */,
+				10567FA12461D56C0078E2F7 /* Jenkinsfile in Resources */,
 				10E2A32A2447657A00ECC5C6 /* Assets.xcassets in Resources */,
 				10E2A3282447655C00ECC5C6 /* Main.storyboard in Resources */,
 			);
