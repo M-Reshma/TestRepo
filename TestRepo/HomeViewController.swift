@@ -10,17 +10,16 @@ import UIKit
 enum HomeMenu: Int {
     case Users = 1, Reports,Attendance,AllocateWork,History
 }
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
     var items = [["icon": "book_appointment","title": "Book an Appointment"],["icon": "video_conference","title": "Virtual Consultation"]]
     override func viewDidLoad() {
         super.viewDidLoad()
-        showMenuButton()
+    
         addNotificationButton()
 collectionView.register(UINib(nibName: "HomeCollectionCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
-        navTitleStr = "Home"
         
         // homeMenuApiCall()
         // Do any additional setup after loading the view.
@@ -34,7 +33,7 @@ collectionView.register(UINib(nibName: "HomeCollectionCell", bundle: nil), forCe
         self.navigationItem.rightBarButtonItems = [notificationBtnItem]
     }
     @objc func notificationBtnTapped(sender: UIButton) {
-      showAlert(message: "Coming Soon...")
+    //  showAlert(message: "Coming Soon...")
     }
     /*
     // MARK: - Navigation
@@ -61,17 +60,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     // make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        // get a reference to our storyboard cell
-        guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as? HomeCollectionCell else {
-            return UICollectionViewCell()
-        }
-
+       
+      return UICollectionViewCell()
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        let menu = self.items[indexPath.item]
-        cell.nameLbl.text = menu["title"]
-        cell.homeIcon.image = UIImage(named: menu["icon"]!)
-
-        return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // Compute the dimension of a cell for an NxN layout with space S between
@@ -90,7 +81,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         guard !(indexPath.item == 1) else {
-            showAlert(message: "Coming Soon...")
+           // showAlert(message: "Coming Soon...")
             return
         }
             
